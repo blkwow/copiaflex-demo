@@ -116,7 +116,7 @@ img { max-width: 100%; display: block; }
     .nav-toggle { display: block; }
     .nav-list { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 24px; gap: 16px; border-bottom: 1px solid var(--gray-100); }
     .nav-list.open { display: flex; }
-    .hero h1 { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+    .hero h1 { font-size: clamp(1.4rem, 6.5vw, 2.2rem); overflow-wrap: break-word; }
     .hero { min-height: 80vh; }
     .cards { grid-template-columns: 1fr; }
     .card h3 { font-size: 1.4rem; }

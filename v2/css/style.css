@@ -138,7 +138,7 @@ img { max-width: 100%; display: block; }
     .burger { display: block; }
     .nav-links { display: none; position: absolute; top: 60px; left: 0; right: 0; background: var(--white); flex-direction: column; padding: 20px 24px; gap: 14px; border-bottom: 1px solid var(--gray-100); }
     .nav-links.open { display: flex; }
-    .hero h1 { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+    .hero h1 { font-size: clamp(1.4rem, 6.5vw, 2.2rem); overflow-wrap: break-word; }
     .hero-body { flex-direction: column; text-align: left; }
     .hero-right { display: none; }
     .hero-btns { flex-direction: column; }
@@ -147,7 +147,7 @@ img { max-width: 100%; display: block; }
     .split--reverse .split-visual { order: 0; }
     .visual-box { height: 280px; }
     .section { padding: 80px 0; }
-    .split-text h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
+    .split-text h2 { font-size: clamp(1.3rem, 5.5vw, 2rem); overflow-wrap: break-word; }
     .pillars { grid-template-columns: 1fr; gap: 28px; }
     .section-head-center h2 { font-size: clamp(1.4rem, 5vw, 1.8rem); }
     .contacto-body { grid-template-columns: 1fr; gap: 40px; }

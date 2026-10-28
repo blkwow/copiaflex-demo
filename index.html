@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiaflex - Propuestas de Diseño Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --rose: #b8929a;
+            --rose-light: #d4bcc1;
+            --rose-pale: #ebe1e3;
+            --rose-dark: #7a5660;
+            --black: #0a0a0a;
+            --white: #fafafa;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background: var(--black);
+            color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(184,146,154,0.05) 50px, rgba(184,146,154,0.05) 51px),
+                repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(184,146,154,0.05) 50px, rgba(184,146,154,0.05) 51px);
+        }
+        .content { position: relative; z-index: 1; text-align: center; max-width: 700px; }
+        .tag {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--rose);
+            margin-bottom: 20px;
+            display: block;
+        }
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+        h1 em { color: var(--rose-light); font-style: italic; }
+        .desc {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.4);
+            line-height: 1.7;
+            margin-bottom: 48px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 48px;
+        }
+        @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 36px 32px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            text-decoration: none;
+            color: var(--white);
+            transition: all 0.3s;
+            text-align: left;
+        }
+        .card:hover {
+            background: rgba(184,146,154,0.08);
+            border-color: var(--rose);
+            transform: translateY(-4px);
+        }
+        .card-num {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 800;
+            color: var(--rose);
+            letter-spacing: 2px;
+            margin-bottom: 14px;
+        }
+        .card h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.3px;
+        }
+        .card p {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.45);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .card-link {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--rose-light);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: auto;
+        }
+        .card:hover .card-link { color: var(--white); }
+        .footer-text {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <span class="tag">Propuesta de diseño web</span>
+        <h1>Nuevo sitio web para <em>Copiaflex</em></h1>
+        <p class="desc">Seleccioná una versión para ver el diseño completo en tu navegador.</p>
+
+        <div class="cards">
+            <a href="v1/index.html" class="card">
+                <span class="card-num">VERSIÓN A</span>
+                <h2>Multi-page</h2>
+                <p>Sitio de múltiples páginas con navegación tradicional. 5 páginas: Inicio, Nosotros, Fotopolímeros, Productos y Contacto.</p>
+                <span class="card-link">Ver propuesta &rarr;</span>
+            </a>
+            <a href="v2/index.html" class="card">
+                <span class="card-num">VERSIÓN B</span>
+                <h2>One-page</h2>
+                <p>Sitio de una sola página con scroll entre secciones. 6 secciones con formulario de contacto integrado.</p>
+                <span class="card-link">Ver propuesta &rarr;</span>
+            </a>
+        </div>
+
+        <p class="footer-text">Copiaflex &middot; Propuesta confidencial &middot; Octubre 2026</p>
+    </div>
+</body>
+</html>

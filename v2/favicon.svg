@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#0a0a0a"/>
+  <rect x="0" y="0" width="32" height="32" rx="6" fill="url(#mesh)" opacity="0.15"/>
+  <defs>
+    <pattern id="mesh" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M8 0H0v8" fill="none" stroke="#b8929a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <text x="16" y="22" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="18" fill="#d4bcc1">C</text>
+</svg>

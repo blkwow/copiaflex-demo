@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Copiaflex</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-text">Copiaflex</span>
+        </a>
+        <nav class="nav">
+            <button class="nav-toggle" aria-label="Menú"><span></span><span></span></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="fotopolimeros.html">Fotopolímeros</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="contacto.html" class="nav-cta">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="page-hero-mesh"></div>
+    <div class="container page-hero-content">
+        <p class="hero-label">02 — Unidad de negocio</p>
+        <h1>Selladoras y<br><span class="hero-em">equipamiento</span></h1>
+        <p class="hero-desc">Fabricación nacional de selladoras continuas y semiautomáticas para la industria del envasado.</p>
+    </div>
+</section>
+
+<!-- Productos -->
+<section class="unidades">
+    <div class="container">
+        <div class="section-header">
+            <p class="label">Catálogo</p>
+            <h2>Equipos para cada necesidad</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-number">01</div>
+                <h3>Selladora Continua Vertical</h3>
+                <p>Sellado de banda continua para alto volumen de producción. Ideal para bolsas de pie y productos granulados.</p>
+                <ul class="card-tags">
+                    <li>Alto volumen</li>
+                    <li>Vertical</li>
+                    <li>Continua</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-number">02</div>
+                <h3>Selladora Continua Horizontal</h3>
+                <p>Diseñada para productos que requieren sellado en posición plana. Regulación de velocidad y temperatura.</p>
+                <ul class="card-tags">
+                    <li>Horizontal</li>
+                    <li>Regulable</li>
+                    <li>Continua</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cards" style="margin-top: 24px;">
+            <div class="card">
+                <div class="card-number">03</div>
+                <h3>Selladora Semiautomática</h3>
+                <p>Versatilidad y precisión para producciones medianas. Fácil operación y mantenimiento.</p>
+                <ul class="card-tags">
+                    <li>Versátil</li>
+                    <li>Semiautomática</li>
+                    <li>Compacta</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-number">04</div>
+                <h3>Asistencia técnica</h3>
+                <p>Servicio post-venta, repuestos y mantenimiento preventivo para todos nuestros equipos.</p>
+                <ul class="card-tags">
+                    <li>Soporte</li>
+                    <li>Repuestos</li>
+                    <li>Nacional</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cifras -->
+<section class="cifras">
+    <div class="cifras-mesh"></div>
+    <div class="container cifras-grid">
+        <div class="cifra">
+            <span class="cifra-n">100%</span>
+            <span class="cifra-t">industria nacional</span>
+        </div>
+        <div class="cifra">
+            <span class="cifra-n">3</span>
+            <span class="cifra-t">modelos disponibles</span>
+        </div>
+        <div class="cifra">
+            <span class="cifra-n">∞</span>
+            <span class="cifra-t">soporte post-venta</span>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container cta-inner">
+        <h2>¿Buscás una selladora?</h2>
+        <p>Te asesoramos para encontrar el equipo ideal para tu producción.</p>
+        <a href="contacto.html" class="btn btn--dark">Consultar</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-left">
+            <span class="logo-text footer-logo-text">Copiaflex</span>
+            <p>Santa Fe, Argentina</p>
+        </div>
+        <div class="footer-right">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="fotopolimeros.html">Fotopolímeros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Copiaflex</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-list').classList.toggle('open');
+});
+</script>
+</body>
+</html>

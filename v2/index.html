@@ -11,8 +11,11 @@
 </head>
 <body>
 
+<!-- Skip Link -->
+<a href="#main-content" class="skip-link">Saltar al contenido</a>
+
 <!-- Nav -->
-<nav class="topnav">
+<nav class="topnav" aria-label="Navegación principal">
     <div class="container topnav-inner">
         <a href="#hero" class="logo">
             <span class="logo-text">Copiaflex</span>
@@ -28,6 +31,7 @@
 </nav>
 
 <!-- Hero -->
+<main id="main-content">
 <section class="hero" id="hero">
     <div class="hero-bg"></div>
     <div class="container hero-body">
@@ -184,22 +188,36 @@
         <div class="contacto-right">
             <form class="form">
                 <div class="form-row">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required>
+                    </div>
                 </div>
-                <select>
-                    <option value="">Asunto</option>
-                    <option>Fotopolímeros</option>
-                    <option>Selladoras / Equipamiento</option>
-                    <option>Presupuesto</option>
-                    <option>Otro</option>
-                </select>
-                <textarea rows="4" placeholder="Mensaje" required></textarea>
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto">
+                        <option value="">Seleccioná un asunto</option>
+                        <option>Fotopolímeros</option>
+                        <option>Selladoras / Equipamiento</option>
+                        <option>Presupuesto</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea rows="4" id="mensaje" placeholder="Contanos sobre tu proyecto" required></textarea>
+                </div>
                 <button type="submit" class="btn btn--full">Enviar consulta</button>
             </form>
         </div>
     </div>
 </section>
+
+</main>
 
 <!-- Footer -->
 <footer class="foot">

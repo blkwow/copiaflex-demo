@@ -71,8 +71,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .home-card .btn { transition: transform 0.3s, background 0.25s; }
 .home-card:hover .btn { transform: translateY(-2px); }
 .home-footer { padding: 20px 0; text-align: center; background: transparent; position: relative; z-index: 1; }
-.home-footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
-.home-footer .logo-text { font-size: 1rem; display: block; margin-bottom: 4px; color: rgba(255,255,255,0.6); }
+.home-footer p { font-size: 0.75rem; color: rgba(255,255,255,0.6); }
+.home-footer .logo-text { font-size: 1rem; display: block; margin-bottom: 4px; color: rgba(255,255,255,0.8); }
 
 /* --- Page Hero --- */
 .page-hero { position: relative; padding: 100px 0 80px; background: var(--black); overflow: hidden; }

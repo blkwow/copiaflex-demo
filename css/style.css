@@ -66,11 +66,11 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .home-card-content { position: relative; z-index: 1; max-width: 400px; }
 .home-card-tag { display: block; font-family: var(--font-h); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--rose-light); margin-bottom: 20px; }
 .home-card h2 { font-family: var(--font-h); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.1; margin-bottom: 16px; letter-spacing: -1px; }
-.home-card p { font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 32px; }
+.home-card p { font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 32px; }
 .home-card .btn { transition: transform 0.3s, background 0.25s; }
 .home-card:hover .btn { transform: translateY(-2px); }
 .home-footer { padding: 20px 0; text-align: center; background: var(--white); }
-.home-footer p { font-size: 0.75rem; color: var(--gray-400); }
+.home-footer p { font-size: 0.75rem; color: var(--gray-600); }
 .home-footer .logo-text { font-size: 1rem; display: block; margin-bottom: 4px; }
 
 /* --- Page Hero --- */

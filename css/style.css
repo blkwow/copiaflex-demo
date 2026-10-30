@@ -56,22 +56,23 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
 .btn--full { width: 100%; text-align: center; }
 
 /* --- HOME: Split Hero --- */
-.home-hero { min-height: 100vh; display: flex; flex-direction: column; }
-.home-split { flex: 1; display: grid; grid-template-columns: 1fr 1fr; }
-.home-card { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 40px; text-align: center; text-decoration: none; color: var(--white); overflow: hidden; transition: all 0.4s; }
-.home-card:hover { flex-grow: 1.1; }
-.home-card--foto { background: linear-gradient(160deg, var(--rose-dark) 0%, var(--rose) 40%, var(--off-black) 100%); }
-.home-card--equip { background: var(--black); }
-.home-card-mesh { position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255,255,255,0.04) 40px, rgba(255,255,255,0.04) 41px), repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255,255,255,0.04) 40px, rgba(255,255,255,0.04) 41px); pointer-events: none; }
+.home-hero { min-height: 100vh; display: flex; flex-direction: column; position: relative; background: linear-gradient(135deg, var(--rose-dark) 0%, var(--rose) 25%, #3a2a3d 50%, #1a2744 75%, #0f1b2e 100%); }
+.home-hero::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, transparent, transparent 28px, rgba(255,255,255,0.025) 28px, rgba(255,255,255,0.025) 29px), repeating-linear-gradient(90deg, transparent, transparent 28px, rgba(255,255,255,0.025) 28px, rgba(255,255,255,0.025) 29px); pointer-events: none; z-index: 0; }
+.home-split { flex: 1; display: grid; grid-template-columns: 1fr 1fr; position: relative; z-index: 1; }
+.home-card { position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 40px; text-align: center; text-decoration: none; color: var(--white); overflow: hidden; transition: all 0.4s; background: transparent; }
+.home-card:hover { background: rgba(255,255,255,0.04); }
+.home-card--foto { border-right: 1px solid rgba(255,255,255,0.06); }
+.home-card--equip { }
+.home-card-mesh { display: none; }
 .home-card-content { position: relative; z-index: 1; max-width: 400px; }
 .home-card-tag { display: block; font-family: var(--font-h); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--rose-light); margin-bottom: 20px; }
 .home-card h2 { font-family: var(--font-h); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.1; margin-bottom: 16px; letter-spacing: -1px; }
 .home-card p { font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 32px; }
 .home-card .btn { transition: transform 0.3s, background 0.25s; }
 .home-card:hover .btn { transform: translateY(-2px); }
-.home-footer { padding: 20px 0; text-align: center; background: var(--white); }
-.home-footer p { font-size: 0.75rem; color: var(--gray-600); }
-.home-footer .logo-text { font-size: 1rem; display: block; margin-bottom: 4px; }
+.home-footer { padding: 20px 0; text-align: center; background: transparent; position: relative; z-index: 1; }
+.home-footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
+.home-footer .logo-text { font-size: 1rem; display: block; margin-bottom: 4px; color: rgba(255,255,255,0.6); }
 
 /* --- Page Hero --- */
 .page-hero { position: relative; padding: 100px 0 80px; background: var(--black); overflow: hidden; }
@@ -157,6 +158,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px
     .nav-links a { padding: 8px 0; min-height: 44px; display: flex; align-items: center; }
     .home-split { grid-template-columns: 1fr; }
     .home-card { padding: 60px 32px; min-height: 50vh; }
+    .home-card--foto { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
     .page-hero { padding: 72px 0 48px; }
     .page-hero h1 { overflow-wrap: break-word; }
     .feat-grid { grid-template-columns: 1fr; }
